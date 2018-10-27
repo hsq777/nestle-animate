@@ -1,0 +1,415 @@
+html {
+    font-size: 50px;
+}
+body {
+    font-size: 12px;
+}
+.contain{
+    position: relative;
+    height: 100%;
+}
+.musicBtn{
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    /* background: url(../images/musicBtn.png) 50% 50% no-repeat; */
+    /* padding: 0.5rem; */
+    z-index: 999;
+    right: 0;
+    top: 0;
+}
+.musicBtn img{
+    width: 100%;
+    height: 100%;
+}
+.music{
+    display: none;
+}
+.swiper-container{
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 10;
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+}
+.swiper-slide{
+    position: relative;
+}
+/*第一页*/
+.first{
+    background: #fff;
+}
+h1{
+    margin: 0;
+    width: 2.04rem;
+    height: 0.41rem;
+    position: absolute;
+    top: 0.05rem;
+    left: 0.15rem;
+}
+h1 img{
+    width: 100%;
+    height: 100%;
+}
+.main_box{
+    position: absolute;
+    top: 3rem;
+    left: 0;
+}
+.main_ban{
+    height: 7.97rem;
+    position: relative;
+}
+.main_ban img{
+    width: 100%;
+    height: 100%;
+}
+.index_txt{
+    position: absolute;
+    width: 4.8rem;
+    height: 1.8rem;
+    top: 2.5rem;
+    left: 1.5rem;
+}
+.banner{
+    height: 1.85rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+    /* background: url(../images/indexHouse.jpg) 0 100% repeat-x; */
+    background-size: 100% auto;
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+}
+.bgmove{
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    transform-origin: center bottom;
+    animation-name: bgmove;
+}
+@keyframes bgmove{
+    0%{left: 0;}
+    100%{left: 100%;}
+}
+.bgmove0{
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    transform-origin: center bottom;
+    animation-name: bgmove0;
+}
+@keyframes bgmove0{
+    0%{left: -100%;}
+    100%{left: 0;}
+}
+.up_arrow{
+    width: 0.56rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    margin: 0 auto;
+    z-index: 11;
+    opacity: 0.8;
+    animation: up_arrow 1.5s infinite ease-in-out;
+}
+@keyframes up_arrow{
+    0%,30%{opacity: 0;transform: translate(0,0.1rem);}
+    60% {
+        opacity: 1;
+        transform: translate(0,0);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(0,0);
+    }
+}
+.up_arrow img{
+    width: 100%;
+}
+/*第二页*/
+.second{
+    background: #fe657a;
+}
+.txtLeft{
+    position: absolute;
+    left: 0.25rem;
+    top: 0.25rem;
+    z-index: 9;
+    width: 1.22rem;
+    height: 2.48rem;
+}
+.txtLeft img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0.25rem;
+    top: 0.25rem;
+}
+.txtRight {
+    width: 1.14rem;
+    height: 3.39rem;
+    position: absolute;
+    right: 0.25rem;
+    bottom: 0.25rem;
+    z-index: 9;
+}
+.txtRight img{
+    width: 100%;
+    height: 100%;
+}
+.txtRight .abs {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.me img{
+    width: 0.68rem;
+    height: 0.68rem;
+}
+.title img{
+    width: 0.44rem;
+    height: 2.04rem;
+}
+.role{
+    position: absolute;
+    right: 0;
+    top: 1rem;
+    width: 6.5rem;
+    height: 10rem;
+}
+.role img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 1rem;
+}
+.qqflash{
+    animation-name: qqflash;
+}
+@keyframes qqflash{
+    0%, 50%, 100% {
+        opacity: 1;
+    }
+    25%, 75% {
+        opacity: 0.4;
+    }
+}
+/*第三张*/
+.third{
+    background: #09bee3;
+}
+.role_two{
+    position: absolute;
+    left: 0;
+    top: 1rem;
+    width: 6.5rem;
+    height: 10rem;
+}
+.role_two img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+}
+.txtRight_two{
+    /* width: 1.19rem;
+    height: 2.32rem;
+    position: absolute;
+    right: 0.25rem;
+    bottom: 0.25rem;
+    z-index: 9; */
+    position: absolute;
+    right: 0.25rem;
+    bottom: 0.25rem;
+    z-index: 9;
+    width: 1.22rem;
+    height: 2.48rem;
+}
+.txtRight_two img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0.25rem;
+    bottom: 0.25rem;
+}
+/* 第四张 */
+.forth{
+    background: #36a15c;
+}
+.role_box{
+    width: 100%;
+    height: 10rem;
+    position: absolute;
+    top: 0;
+}
+.role_box img{
+    width: 100%;
+    height: 100%;
+}
+.role_box .dogFix{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.role_box .pick_dog{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.role_box .btn_dog{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.role_box .dog_light{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.role_box .catFix{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.role_box .pick_cat{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.role_box .btn_cat{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.role_box .cat_light{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.btn_notic{
+    width: 100%;
+    height: 0.61rem;
+    position: absolute;
+    bottom: 0.5rem;
+}
+.btn_notic img{
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    left:38%;
+    /*margin-top:-25px; */
+    /* text-align: center; */
+}
+/*第五张*/
+.firth{
+    background: #669cff;
+}
+.firth img{
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.summer{
+    width: 100%;
+    height: 1.62rem;
+    padding-top: 14%;
+}
+.dots{
+    width: 100%;
+    height: 0.72rem;
+    padding: 14% 0 20%;
+}
+.titles{
+    position: relative;
+    height: 4.02rem;
+}
+.firth .titles img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* display: block;
+    margin: 0 auto; */
+}
+/*第六张*/
+.sixth{
+    background: #fff;
+}
+.txt_title{
+    height: 0.5rem;
+    margin: 20% 0;
+}
+.txt_title img{
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.search_box{
+    border: solid 1px #959ba0;
+    overflow: hidden;
+    margin: 0 15%;
+    padding: 5px;
+    position: relative;
+}
+.key_word{
+    width: 1.52rem;
+    height: 0.26rem;
+    position: relative;
+}
+.key_word img{
+    width: 100%;
+    height: 100%;
+}
+.key_btn{
+    background: url(../images/iconsZoom.png) 50% 50% no-repeat #669cff;
+    background-size: 0.35rem;
+    height: 100%;
+    width: 0.5rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.click{
+    animation-delay: 1.7s;
+    animation-name: click;
+    animation-duration: 200ms;
+
+}
+@keyframes click{
+    0%,100%{background-color: #669cff;}
+    50%{background-color: #386ccb;}
+}
+.btn_box{
+    height: 1.15rem;
+    position: absolute;
+    bottom: 12%;
+    left: 0;
+    width: 100%;
+}
+.btn_box img{
+    display: block;
+    width: 1.47rem;
+    height: 0.27rem;
+    margin: 0 auto;
+}
+.btn_box .btns{
+    height: 0.86rem;
+    text-align: center;
+}
+.btn_box .btns a{
+    display: inline-block;
+    height: 0.56rem;
+    width: 2.05rem;
+    margin: 0.15rem;
+}
+.btn_box .btns a img{
+    width: 100%;
+    height: 100%;
+}
